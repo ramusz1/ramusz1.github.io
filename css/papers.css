@@ -1,0 +1,10 @@
+.paper-title {
+    font-weight: bold;
+    color: #1a202c;
+}
+
+.paper-meta {
+    font-style: italic;
+    color: #a0a0a0;
+    font-size: medium;
+}
