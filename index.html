@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Rafał Muszyński</title>
-    <link rel="stylesheet" href="css/sakura.css">
+    <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/papers.css">
     <link rel="stylesheet" href="css/projects.css">
 </head>
@@ -13,8 +13,8 @@
     <h1>Rafał Muszyński</h1>
     <p>
         Hi! I'm a PhD candidate from Poland. I'm interested in computer vision. Currently I'm trying to finish up my
-        PhD, in
-        which I focus on Hyperspectral imaging applications and image processing algorithms.
+        PhD at Ghent University, in
+        which I focus on hyperspectral imaging technology - applications and image processing algorithms.
     </p>
 
     <p>
@@ -33,17 +33,46 @@
         <li>Low level computing</li>
     </ul> -->
 
-    <h2 id="Projects">Projects</h2>
-    TODO
-    <!-- <div class="project">
-        <h3>Corrosion detection using drones</h3>
+    <h2 id="Projects">Projects and experiences</h2>
+    <div class="project">
+        <img src="images/demosaicing-results.svg" alt="Demosaicing results" height="200" style="float:right">
+
+        <img src="images/demosaicing-what.svg" alt="What is demosaicing" height="100" style="float:right">
+
+        <h3> Hyperspectral demosaicing </h3>
+        Hyperspectral demosaicing aims to recover full spectral information at each pixel from a mosaicked image
+        captured using a snapshot camera. We demonstrate, that robust demosaicing models with near SOTA performance can
+        be trained using existing RGB datasets with simple hyperspectral augmentations. Resulting model was used in
+        multiple internal projects.
+        Paper: <a href="#paper-cube-it">Cube-it ... (2024) </a>
+
+
     </div>
     <div class="project">
-        Hyperspectral demosaicing
+        <img src="images/drone.png" alt="Drone inspection" height="200" style="float:left;margin-right:10px">
+
+        <h3>Inspecting high-voltage towers using drones</h3>
+        Our group researched the use of hyperspectral imaging for the task
+        of corrosion detection and corrosion severity estimation. We worked in cooperation with the Belgian electrical
+        grid operator (Elia). Paper: <a href="#paper-drone-based">Drone based ... (2024) </a>
+    </div>
+
+    <div class="project">
+        <h3> Hyperspectral object tracking </h3>
+        Can hyperspectral information improve object tracking performance? In theory, spectra add discriminative power
+        which the tracker can use to distinguish between similar objects. To answer this question, multiple editions of
+        <a href="https://hsitracking.com">hyperspectral object challenge</a> were organized (some of which I
+        co-organized).
+        Paper: <a href="#paper-helios">Helios ... (2023) </a>
     </div>
     <div class="project">
-        Hyperspectral object tracking
-    </div> -->
+        <h3> TCL - computer vision in mobile phones</h3>
+        My first computer vision job! During my time there I worked on three projects: a proof of concept application
+        for
+        object removal from photographs, panorama stiching, and HDR image capturing.
+        Learned a lot about low level code optimizations, c++, neon, image stitching, denoising, object detection, HDR.
+        Patent: <a href="#paper-method">Method for ... (2021) </a>
+    </div>
 
     <h2 id="Publications">Publications</h2>
 
@@ -65,8 +94,7 @@
             </div>
         </li>
         <li>
-
-            <div class="paper">
+            <div class="paper" id="paper-cube-it">
                 <span class="paper-title">
                     Cube it: Training Hyperspectral Demosaicing Models Using Synthetic Datasets (2024)
                 </span>
@@ -83,7 +111,7 @@
             </div>
         </li>
         <li>
-            <div class="paper">
+            <div class="paper" id="paper-drone-based">
                 <span class="paper-title">
                     Drone-Based Corrosion Detection on High-Voltage Transmission Towers Based on Spectral Angle
                     Classification
@@ -111,7 +139,7 @@
             </div>
         </li>
         <li>
-            <div class="paper">
+            <div class="paper" id="paper-helios">
                 <span class="paper-title">
                     Helios: Hyperspectral Hindsight Ostracker
                 </span>
@@ -120,6 +148,7 @@
                     13th Workshop on Hyperspectral Imaging and Signal Processing: Evolution in Remote Sensing (WHISPERS)
                 </span>
                 <a href="https://doi.org/10.1109/whispers61460.2023.10430711">link</a>
+                <a href="https://github.com/ramusz1/helios">github</a>
             </div>
         </li>
         <li>
@@ -135,7 +164,7 @@
             </div>
         </li>
         <li>
-            <div class="paper">
+            <div class="paper" id="paper-method">
                 <span class="paper-title">
                     Method for automatic object removal from a photo, processing system and associated computer program
                     product
