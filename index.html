@@ -1,6 +1,14 @@
 <!doctype html>
 <html>
 
+<script>
+    function scrollToSection(id) {
+        const section = document.getElementById(id);
+        const header = document.getElementById('Header');
+        window.scrollTo(0, section.offsetTop - header.offsetHeight);    
+    }
+</script>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -15,17 +23,19 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="header-sections">
+    <div id="Header" class="header">
+        <div class="header-left">
             <a href="#top">
                 <h1>Rafał Muszyński</h1>
             </a>
-            <a href="#Projects">
-                <h4>Projects</h4>
-            </a>
-            <a href="#Publications">
-                <h4>Publications</h4>
-            </a>
+            <div class="header-sections">
+                <a onclick="scrollToSection('Projects')">
+                    <h4>Projects</h4>
+                </a>
+                <a onclick="scrollToSection('Publications')">
+                    <h4>Publications</h4>
+                </a>
+            </div>
         </div>
         <div class="header-logos">
             <a href="https://github.com/ramusz1">
